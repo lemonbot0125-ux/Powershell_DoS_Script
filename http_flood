@@ -106,7 +106,7 @@ $url = (Read-Host 半角でurlをhttp/httpsから入力してください。)
 $limit =(Get-date).AddMinutes("$timemin")
 $UA = $UAs.Split('@')
 while ( (Get-Date) -le $limit ) {
-$random = Get-Random -Minimum 1 -Maximum 100
+$random = Get-Random -Minimum 1 -Maximum 102
 $web = New-Object System.Net.WebClient
 $byte = [byte[]](1..255)
 $web.Headers.Add([System.Net.HttpRequestHeader]::UserAgent, $UA[$random])
