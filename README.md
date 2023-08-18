@@ -1,5 +1,6 @@
 # Powershell_DoS_Script
 ![GitHub Watch](https://img.shields.io/github/watchers/rifurekusyon/Powershell_DoS_Script.svg?style=social&label=Watch)  
+***PowerShell 7を強く推奨***  
 ただhttpリクエストをUA偽装して送りまくるだけです。  
 Windows Powershelにコピペして実行できます。  
 ※TLSフィンガープリントをspoofする機能やproxyを刺す機能等はありません。  
