@@ -1,4 +1,4 @@
-# Powershell_DoS_Script
+# Powershell_DoS_Script (田代砲)
 ***PowerShell 7の使用を強く推奨***  
 ただhttpリクエストをUA偽装して送りまくるだけです。  
 Windows Powershelにコピペして実行できます。ps1ファイルで実行するとパフォーマンスが低下します。  
