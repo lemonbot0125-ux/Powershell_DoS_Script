@@ -40,6 +40,7 @@ XX.XX.XX.XX:port
 ## 履歴
 
 - http_flood6: DoS攻撃検知回避機能とproxyに対応しました。
+  - これらの機能を使うとスループットが低下します。
 - http_flood5: リクエストヘッダにUser Agent Client Hintsを追加
 - http_flood4: リクエストヘッダの内容を変更しました。
 - http_flood3: ユーザエージェントの他にリファラ等も偽装します。
