@@ -8,11 +8,11 @@ Windows Powershelにコピペして実行できます。ps1ファイルで実行
 ***Only for Educational Purposes***
 
 http_flood6: DoS攻撃検知回避機能とproxyに対応しました。使用する場合は  
-            　XX.XX.XX.XX:port  
-              XX.XX.XX.XX:port  
-              XX.XX.XX.XX:port  
-                    ︙　　　　　　
-              のように記述したproxy.txtを実行するディレクトリに設置してください。  
+XX.XX.XX.XX:port  
+XX.XX.XX.XX:port  
+XX.XX.XX.XX:port  
+-------︙---------  　　　　
+のように記述したproxy.txtを実行するディレクトリに設置してください。  
 http_flood5:   
 http_flood4: リクエストヘッダの内容を変更しました。  
 http_flood3: ユーザエージェントの他にリファラ等も偽装します。  
