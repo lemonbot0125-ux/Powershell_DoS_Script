@@ -19,5 +19,4 @@ http_flood4: リクエストヘッダの内容を変更しました。
 http_flood3: ユーザエージェントの他にリファラ等も偽装します。  
 http_flood2: ダミーユーザエージェントの数が非常に多いやつです。  
   
-![aaaaa](https://github.com/rifurekusyon/Powershell_DoS_Script/assets/108679694/dbac5e8c-f8e8-4573-ada3-576fa072d905)
 
