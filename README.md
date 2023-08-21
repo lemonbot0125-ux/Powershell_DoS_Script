@@ -12,6 +12,7 @@ XX.XX.XX.XX:port
 XX.XX.XX.XX:port  
 XX.XX.XX.XX:port  
        ︙  
+  
 のように記述したproxy.txtを実行するディレクトリに設置してください。  
 http_flood5:   
 http_flood4: リクエストヘッダの内容を変更しました。  
