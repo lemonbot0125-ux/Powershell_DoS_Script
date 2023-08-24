@@ -935,7 +935,7 @@ switch ($IsLINKSBrank) {
 		clear
 	}
 	"False" {
-		$LINKS += $url_target
+		#$LINKS += $url_target
 		clear
 	}
 }
