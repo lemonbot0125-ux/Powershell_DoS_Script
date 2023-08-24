@@ -958,7 +958,7 @@ Write-Host "
 " -ForegroundColor Yellow
 }
 
-clear
+#clear
 result
 
 $timemin = (Read-Host 半角で攻撃時間[分]を入力)
