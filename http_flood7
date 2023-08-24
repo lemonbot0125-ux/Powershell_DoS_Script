@@ -935,6 +935,7 @@ switch ($IsLINKSBrank) {
 		clear
 	}
 	"False" {
+		$LINKS += $url_target
 		clear
 	}
 }
@@ -1206,3 +1207,4 @@ function IfuseProxy {
 }
 clear
 IfuseProxy
+clear
