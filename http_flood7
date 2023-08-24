@@ -917,7 +917,7 @@ $NumberOfLink = $LINK.count
 while ($LinkCount -le $NumberOfLink) {
 	[uri]$URL = "$LINK[$LinkCount]"
 	$DomainTemp = $url.Authority -replace '^www\.'
-	if ($domain = $DomainTemp) {
+	if ($domain -eq $DomainTemp) {
 		$LinkCount++
 	} else {
 		$LINK[$LinkCount] = $null
@@ -935,7 +935,6 @@ switch ($IsLINKSBrank) {
 		clear
 	}
 	"False" {
-		#$LINKS += $url_target
 		clear
 	}
 }
