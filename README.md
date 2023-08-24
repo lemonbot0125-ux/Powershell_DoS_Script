@@ -41,7 +41,7 @@ XX.XX.XX.XX:port
 
 
 ## 履歴
-- http_flood7: サーバのディレクトリをランダムに選んで訪問するように仕様変更しました。
+- http_flood7: URLと<href>タグから得たサーバのディレクトリをランダムに選んで訪問するように仕様変更しました。
 - http_flood6: DoS攻撃検知回避機能とproxyに対応しました。
   - これらの機能を使うとスループットが低下します。
 - http_flood5: リクエストヘッダにUser Agent Client Hintsを追加
