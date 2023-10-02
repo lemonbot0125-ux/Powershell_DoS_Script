@@ -12,7 +12,6 @@ clear
 ##################################################################
 
 
-
 $acceptall = "@text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 	     @text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8
 	     @application/xml,application/xhtml+xml,text/html;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
