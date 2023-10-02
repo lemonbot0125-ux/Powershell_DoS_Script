@@ -11,6 +11,7 @@
 
 ## お知らせ
 
+- 低スぺの方はhttp_flood6を使用してください。
 - Microsoft edge がインストールしてある必要があります。
 - PowerShell 7の使用を強く推奨 (既存のPowershellでも動くが7のほうがパフォーマンスが良い)
   - x64msi https://github.com/PowerShell/PowerShell/releases/download/v7.3.6/PowerShell-7.3.6-win-x64.msi
@@ -22,7 +23,8 @@
 ## 使い方
 
 - Windows Powershelにコピペして実行できます。
-
+- bypass Dos detectionを有効にするとスループットが低下します。
+- cookieは送信しない場合何も入力せずEnterを押してください。
 
 
 
