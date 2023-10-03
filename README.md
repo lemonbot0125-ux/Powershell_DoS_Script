@@ -5,13 +5,13 @@
 ただhttpリクエストをUA等を偽装して送りまくるだけです。
 
 
-# 重要
+# <span style="color: red; ">重要</span>
 
 - 実験用又は教育目的の物です。他人のサイトやサービスに対しては絶対に使用しないでください。これに関する一切の責任は負いかねます。 Only for Educational Purposes
 
 ## お知らせ
 
-- 低スぺの方はhttp_flood6を使用してください。
+- <span style="color: green; ">低スぺの方はhttp_flood6を使用してください。</span>
 - Microsoft edge がインストールしてある必要があります。
 - PowerShell 7の使用を強く推奨 (既存のPowershellでも動くが7のほうがパフォーマンスが良い)
   - x64msi https://github.com/PowerShell/PowerShell/releases/download/v7.3.6/PowerShell-7.3.6-win-x64.msi
@@ -23,7 +23,7 @@
 ## 使い方とか諸々
 
 - Windows Powershelにコピペして実行できます。
-- 性能に余裕のある端末では複数のターミナルウィンドウで同時に実行可能です。
+- <span style="color: green; ">性能に余裕のある端末では複数のターミナルウィンドウで同時に実行可能です。</span>
 - bypass Dos detectionを有効にするとスループットが低下します。
 - cookieは送信しない場合何も入力せずEnterを押してください。
 
