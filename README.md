@@ -31,7 +31,7 @@
 
 
 ## proxy
-いくつかのproxyサーバを経由させる場合は以下のように記述されたproxy.txtをPowershellの実行するディレクトリに設置してください。  
+いくつかのproxyサーバを経由させる場合は以下のように記述されたproxy.txtをPowershellの実行するカレントディレクトリに設置してください。  
 (http_flood6,7のみ)
 ```
 XX.XX.XX.XX:port
