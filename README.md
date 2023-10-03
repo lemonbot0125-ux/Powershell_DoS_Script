@@ -2,31 +2,32 @@
 # Powershell_DoS_Script(田代砲)
 
 
-ただhttpリクエストをUA等を偽装して送りまくるだけです。
+ただhttp GET/POSTをUA等を偽装して送りまくるだけです。
 
 
-# <span style="color: red; ">重要</span>
+# 重要
 
 - 実験用又は教育目的の物です。他人のサイトやサービスに対しては絶対に使用しないでください。これに関する一切の責任は負いかねます。 Only for Educational Purposes
 
-## お知らせ
-
-- <span style="color: green; ">低スぺの方はhttp_flood6を使用してください。</span>
+## 要件
 - Microsoft edge がインストールしてある必要があります。
-- PowerShell 7の使用を強く推奨 (既存のPowershellでも動くが7のほうがパフォーマンスが良い)
+- PowerShell-7.3.6の使用を強く推奨 (既存のPowershellでも動くが7のほうがパフォーマンスが良い)
   - x64msi https://github.com/PowerShell/PowerShell/releases/download/v7.3.6/PowerShell-7.3.6-win-x64.msi
   - x64zip https://github.com/PowerShell/PowerShell/releases/download/v7.3.6/PowerShell-7.3.6-win-x64.zip
-- ps1ファイルで実行するとパフォーマンスが低下します。
-
 
 
 ## 使い方とか諸々
 
-- Windows Powershelにコピペして実行できます。
-- <span style="color: green; ">性能に余裕のある端末では複数のターミナルウィンドウで同時に実行可能です。</span>
-- bypass Dos detectionを有効にするとスループットが低下します。
+- Windows Powershellにコピペして実行できます。
 - cookieは送信しない場合何も入力せずEnterを押してください。
 
+
+## お知らせ
+
+- 低スぺの方はhttp_flood6を使用してください。
+- ps1ファイルとして実行するとパフォーマンスが低下します。
+- 性能に余裕のある端末では複数のターミナルウィンドウで同時に実行可能です。(proxyを使うときはこれをおすすめします)
+- bypass Dos detectionを有効にするとスループットが低下します。
 
 
 ## proxy
