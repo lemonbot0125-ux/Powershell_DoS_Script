@@ -12,7 +12,7 @@
 ## 要件
 - Microsoft edge がインストールしてある必要があります。
 - PowerShell-7.3.6の使用を強く推奨 (既存のPowershellでも動くが7のほうがパフォーマンスが良い)
-  - x64msi https://github.com/PowerShell/PowerShell/releases/download/v7.3.6/PowerShell-7.3.6-win-x64.msi
+  - (推奨)x64msi https://github.com/PowerShell/PowerShell/releases/download/v7.3.6/PowerShell-7.3.6-win-x64.msi
   - x64zip https://github.com/PowerShell/PowerShell/releases/download/v7.3.6/PowerShell-7.3.6-win-x64.zip
 
 
