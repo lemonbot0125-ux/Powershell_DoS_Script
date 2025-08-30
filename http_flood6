@@ -904,9 +904,9 @@ $origin = @("same-origin", "cross-origin")
 
 
 clear
-$url = (Read-Host 半角でurlをhttp/httpsから入力) 
+$url = (Read-Host https://www.chatwork.com/service/packages/chatwork/pre_register.php?plan=free&lang=ja&page=login&_gl=1*1it8esd*_gcl_au*MTk0Mzg5NDY5Ny4xNzUyODA4MzgxLjcyNzcyMjc0My4xNzUzMzIxNDA1LjE3NTMzMjE0MDQ.*_ga*MTY4OTIyNjExOS4xNzQ0ODI0MDMx*_ga_XR1CWB8ZCV*czE3NTUyNDY2NjEkbzIyMiRnMCR0MTc1NTI0NjY2MyRqNTgkbDAkaDIwMzI0MDM3NjY.) 
 clear
-$timemin = (Read-Host 半角で攻撃時間[分]を入力)
+$timemin = (Read-Host 360)
 clear
 $cookie = (Read-Host Cookieを送信する場合は入力)
 clear
